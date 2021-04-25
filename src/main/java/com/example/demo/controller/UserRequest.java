@@ -6,6 +6,9 @@ import java.math.BigDecimal;
 public class UserRequest {
 
     @NotNull
+    private String firstName;
+
+    @NotNull
     private String mobileNumber;
     @NotNull
     private String accountNumber;
@@ -42,5 +45,13 @@ public class UserRequest {
 
     public void setAccountNumber(String accountNumber) {
         this.accountNumber = accountNumber;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 }
